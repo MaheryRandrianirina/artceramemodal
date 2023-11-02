@@ -1,0 +1,83 @@
+.modal-container {
+    overflow-y: scroll;
+    background: rgba(63, 63, 63, 0.3);
+}
+
+.main-modal {
+    opacity: 0;
+    transform: scale(0.4);
+    height: 550px;
+    top: 20px;
+    transition: transform .3s cubic-bezier(0.39, 0.575, 0.565, 1), opacity .3s;
+}
+
+.main-modal.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.main-modal .icon-x {
+    float: right;
+    cursor: pointer;
+    transition: transform .3s ease;
+}
+
+.main-modal .icon-x:hover {
+    transform: scale(1.2);
+}
+
+/* .realisation {
+    height: 200px;
+    width: 200px;
+    background: #2c2c2c;
+} */
+
+.owl-carousel {
+    width: 60% !important;
+    overflow: hidden;
+    position: relative;
+}
+
+.infos {
+    width: 38%;
+}
+
+.owl-item {
+    height: 100%;
+    display: inline-block;
+}
+
+.owl-item .item {
+    overflow-x: hidden;
+}
+
+.owl-item img {
+    width: fit-content;
+    height: 500px;
+}
+
+.owl-nav {
+    position: absolute;
+    top: calc(50% - 15px);
+    width: 100%;
+}
+.owl-nav button {
+    position: absolute;
+    background-color: #ccccccb0;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: filter .3s ease;
+}
+
+.owl-nav button:hover {
+    filter: brightness(.8);
+}
+
+.owl-nav .owl-prev {
+    left: 10px;
+}
+.owl-nav .owl-next {
+    right: 10px;
+}
